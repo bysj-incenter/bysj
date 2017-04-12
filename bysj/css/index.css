@@ -1,0 +1,310 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+@font-face {
+    font-family:'cool';
+    src:url('../font/汉仪行楷简.ttf')
+}
+@font-face {
+    font-family:'kai';
+    src:url('../font/汉仪楷体简.ttf')
+}
+@keyframes yun {
+    0%{
+        background-position: 2000px -80px;
+    }
+    50%{
+        background-position: 0 -80px;
+    }
+    100%{
+        background-position: -2000px -80px;
+    }
+}
+body{
+    background:#eee;
+}
+header{
+    width:100%;
+    background: url("../img/bg1.jpg");
+    background-size: 960px auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+header > div{
+    width:960px;
+    height:100px;
+    background:url("../img/yun1.png");
+    animation: yun 60s linear infinite;
+    margin:0 auto;
+}
+header > div > img{
+    display:block;
+    float:left;
+    margin-top:12px;
+}
+header > div > h1{
+    font-weight:normal;
+    font-size:40px;
+    line-height:100px;
+    margin-left:10px;
+    font-family:'cool';
+    float:left;
+}
+header > div > h2{
+    width:45px;
+    height:20px;
+    font-weight:normal;
+    font-size:14px;
+    float:right;
+    color:#fff;
+    line-height:20px;
+    margin:40px 20px;
+    cursor: pointer;
+    background-image: url("../img/icon.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+/*nav*/
+nav{
+    width:100%;
+    height:50px;
+}
+nav > div{
+    width:960px;
+    height:100%;
+    margin:0 auto;
+    /*background:#2691fd;*/
+}
+nav > div > div{
+    float:left;
+    width:12.5%;
+    height:100%;
+    color:#fff;
+}
+nav > div > div > a{
+    display: block;
+    width:90px;
+    height:30px;
+    margin:10px auto;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    box-sizing: border-box;
+}
+nav > div > div:first-child ~ div:hover > a{
+    background:#92d33c;
+    width:100px;
+    border-radius:15px;
+    border:1px solid #fff;
+}
+.banner{
+    width:960px;
+    height:500px;
+    margin:0 auto;
+    background:url("../img/banner1.jpg");
+    background-size:100% 500px;
+    background-position:center;
+}
+/*first-floor*/
+.first-floor{
+    width:960px;
+    height:300px;
+    margin:10px auto;
+}
+.first-floor > div{
+    width:100%;
+    height:50px;
+    background:#ddd;
+    padding:0 15px;
+    box-sizing: border-box;
+}
+.first-floor > div > h2{
+    line-height:50px;
+    float:Left;
+    font-size: 20px;
+    font-weight: 500;
+}
+.first-floor > div > a{
+    line-height:50px;
+    float:right;
+    color:#000;
+    font-size: 14px;
+}
+.first-floor > div > a > span{
+    font-family: '宋体';
+}
+.first-floor > ul{
+    width:100%;
+    height:250px;
+    display: flex;
+    justify-content: space-between;
+}
+.first-floor > ul > li{
+    width:32.7%;
+    height:100%;
+    background:#fff;
+}
+.first-floor > ul > li > div:nth-child(1){
+    width:40%;
+    height:100%;
+    float:Left;
+    background:yellow;
+}
+.first-floor > ul > li > div:nth-child(2){
+    width:60%;
+    height:100%;
+    float:Left;
+    padding:20px 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.first-floor > ul > li > div:nth-child(2) > .many{
+    width:75px;
+    height:25px;
+    border-radius: 3px;
+    background: #7440F7;
+    font-size: 12px;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    color:#fff;
+    text-align: center;
+    line-height:25px;
+    font-family: '宋体';
+}
+.first-floor > ul > li > div > h4{
+    width:100%;
+    height:50px;
+    text-align: center;
+    line-height:50px;
+}
+.first-floor > ul > li > div > div{
+    width:100%;
+    height:200px;
+    background: pink;
+}
+pre{
+    font-size: 18px;
+}
+.first-floor > ul > li > div > p{
+    font-size: 14px;
+    margin-top:20px;
+    text-align: justify;
+}
+/*second-frool*/
+.second-floor{
+    width:960px;
+    height:200px;
+    margin:25px auto;
+    background:#fff;
+    border:8px solid #e4e4e4;
+    box-sizing:border-box;
+}
+.second-floor > div{
+    width:50%;
+    height:100%;
+    float:left;
+    padding:10px;
+}
+.second-floor > div:nth-child(1){
+    border-right:4px solid #e4e4e4;
+    box-sizing:border-box;
+}
+.second-floor > div > .left{
+    width:30%;
+    height:100%;
+    float:left;
+    border-right:1px dotted #aaa;
+    box-sizing: border-box;
+}
+.second-floor > div > .right{
+    width:70%;
+    height:100%;
+    /*background:greenyellow;*/
+    float:left;
+    padding-left:15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.second-floor > div > .left > .top{
+    width:100%;
+    height:45%;
+    font-size: 18px;
+    text-align: center;
+    line-height:100px;
+    font-family: 'kai';
+}
+.left > .bottom{
+    width:100%;
+    height:55%;
+    font-size: 22px;
+    text-align: center;
+    line-height:100px;
+    background-image: url("../img/kcja.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.wstk > .left > .bottom{
+     background-image: url("../img/wstk.jpg");
+ }
+.sxxm > .left > .bottom{
+     background-image: url("../img/sxxm.jpg");
+ }
+.xxzy > .left > .bottom{
+     background-image: url("../img/xizy.jpg");
+ }
+.jxlx > .left > .bottom{
+     background-image: url("../img/jxlx.jpg");
+ }
+.hddy > .left > .bottom{
+     background-image: url("../img/zxdy.jpg");
+ }
+.second-floor > div > .right > h6{
+    width:100%;
+    height:22%;
+    line-height:50px;
+    font-size: 14px;
+    font-weight:normal;
+    border-bottom:1px dotted #ddd;
+}
+.second-floor > div:nth-child(2){
+    border-left:4px solid #e4e4e4;
+    box-sizing:border-box;
+}
+.more{
+    width:0px;
+    height:25px;
+    border-radius: 3px;
+    background: #1C5FA3;
+    font-size: 12px;
+    position: absolute;
+    bottom:-8px;
+    right:-5px;
+    color:#fff;
+    text-align: center;
+    line-height:25px;
+    font-family: '宋体';
+    overflow: hidden;
+}
+/*页脚*/
+footer{
+    width:960px;
+    height:45px;
+    margin:0 auto;
+    background:#0A246A;
+    border-radius:6px;
+    text-align: center;
+    font-size: 12px;
+    color:#bbb;
+}
+footer > p:nth-child(1){
+    line-height:30px;
+}
+footer > p:nth-child(2){
+    line-height:10px;
+}
