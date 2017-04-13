@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'kai';
+    src: url('../font/汉仪楷体简.ttf');
+}
+@font-face {
+    font-family: 'cool';
+    src: url('../font/汉仪行楷简.ttf');
+}
+/*导航*/
+nav{
+    width:960px;
+    margin: 0 auto;
+    height:80px;
+    margin-top: 10px;
+}
+nav > .left{
+    width:230px;
+    height:100%;
+    float: left;
+    background:#2691fd ;
+}
+nav > div.left > div{
+    float: left;
+}
+nav > div.left > div > img{
+    width: 100px;
+    margin-top: -5px;
+}
+nav > div.left > div > span{
+    float: left;
+    display: block;
+    font-size: 32px;
+    font-family: 'cool';
+    margin-top: 26px;
+    margin-left: -14px;
+}
+
+
+nav > div.right{
+    float: right;
+    width:730px;
+    height:100%;
+    background:#2691fd;
+}
+nav > div.right > div{
+    float:left;
+    width: 12.5%;
+    height:100%;
+    color:#fff;
+}
+nav > div.right > div > a{
+    display: block;
+    width:80px;
+    height:30px;
+    margin:30px auto;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    box-sizing: border-box;
+}
+nav > div.right > div:first-child ~ div:hover > a{
+    background:#92d33c;
+    width:80px;
+    border-radius:15px;
+    border:1px solid #fff;
+}
+.first{
+    background:#92d33c;
+    width:80px;
+    border-radius:15px;
+    border:1px solid #fff;
+}
+
+/*教学大纲*/
+.jx{
+    width: 960px;
+    overflow: hidden;
+    margin: 0px auto;
+    background: #fff;
+    position: relative;
+}
+/*左侧列表*/
+.jx >ul.active{
+    width: 230px;
+    height: 650px;
+    padding: 20px;
+    background: #46aef5;
+    list-style: none;
+    position: fixed;
+    left: 195px;
+}
+.jx >.jx-nav{
+    width: 230px;
+    height: 100%;
+    padding: 20px;
+    background: #46aef5;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.jx >ul >li{
+    width: 100%;
+    height: 35px;
+    padding:6px 0;
+    margin-bottom: 6px;
+    border-bottom: 1px dotted #eee;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px
+}
+.jx >ul >li:first-child>span{
+    font-family: '宋体';
+    font-size: 12px;
+}
+.jx >ul >li.xx{
+    text-indent: 10px;
+}
+
+/*右侧内容*/
+.jx-content{
+    width: 76%;
+    padding: 5%;
+    float: right;
+    height: auto;
+}
+.jx > .over{
+    height: 513px;
+}
+.jx-content > h2{
+    width: 246px;
+    height: 50px;
+    text-align: left;
+    color: #333399;
+    font-family: 'kai';
+    margin: 0 auto;
+    line-height: 50px;
+}
+.jx-content > p{
+    font-size: 16px;
+    text-indent:32px;
+    line-height: 24px;
+    text-align: justify;
+}
+/*底部*/
+footer{
+    width:960px;
+    height:45px;
+    margin:0 auto;
+    background:#2691fd;
+    text-align: center;
+    font-size: 12px;
+    color:#fff;
+}
+footer > p:nth-child(1){
+    line-height:30px;
+}
+footer > p:nth-child(2){
+    line-height:10px;
+}
+
