@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'kai';
+    src: url('../font/汉仪楷体简.ttf');
+}
+/*导航*/
+nav{
+    width:960px;
+    margin: 0 auto;
+    height:80px;
+    margin-top: 10px;
+}
+nav > .left{
+    width:230px;
+    height:100%;
+    float: left;
+    background:#2691fd ;
+}
+nav > div.left > div{
+    float: left;
+}
+nav > div.left > div > img{
+    width: 100px;
+    margin-top: -5px;
+}
+nav > div.left > div > span{
+    float: left;
+    display: block;
+    font-size: 32px;
+    font-family: 'cool';
+    margin-top: 26px;
+    margin-left: -14px;
+}
+nav > div.right{
+    float: right;
+    width:730px;
+    height:100%;
+    background:#2691fd;
+}
+nav > div.right > div{
+    float:left;
+    width: 12.5%;
+    height:100%;
+    color:#fff;
+}
+nav > div.right > div > a{
+    display: block;
+    width:80px;
+    height:30px;
+    margin:30px auto;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    box-sizing: border-box;
+}
+nav > div.right > div:first-child ~ div:hover > a{
+    background:#92d33c;
+    width:80px;
+    border-radius:15px;
+    border:1px solid #fff;
+}
+.first{
+    background:#92d33c;
+    width:80px;
+    border-radius:15px;
+    border:1px solid #fff;
+}
+
+/*学习资源*/
+.zy{
+    width: 960px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+/*学习资源左侧列表*/
+.zy >ul.active{
+    width: 230px;
+    height: 650px;
+    padding: 20px;
+    background: #46aef5;
+    list-style: none;
+    position: fixed;
+    left: 195px;
+}
+.zy >.zy-nav{
+    width: 230px;
+    height: 100%;
+    padding: 20px;
+    background: #46aef5;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.zy >.zy-nav>li:first-child{
+    font-size: 16px;
+}
+.zy >.zy-nav>li:first-child>span{
+    font-family: '宋体';
+    font-size: 12px;
+}
+.zy >.zy-nav>li:first-child~li{
+    text-indent: 10px;
+}
+.zy >ul >li{
+    width: 100%;
+    height: 35px;
+    padding:6px 0;
+    margin-bottom: 6px;
+    border-bottom: 1px dotted #eee;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.zy >ul >li:hover{
+    color:#ff6700;
+}
+.zy >ul >li.active>span{
+    color: #fff;
+    font-size: 12px;
+    font-family: '宋体';
+}
+/*/*学习资源内容*/
+.zy-content{
+    width: 76%;
+    padding: 5% 5% 0 5%;
+    float: right;
+    position: relative;
+    margin-bottom: 60px;
+}
+.zy-content > .title{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: justify;
+}
+.zy-content > .title > h1{
+    color: #333399;
+    font-family: 'kai';
+}
+.unit{
+    width: 100%;
+    height: auto;
+}
+.unit >div{
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px dotted #ddd;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.unit >div >p.text{
+    font-family: 'kai';
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.unit >div >p{
+    text-indent: 34px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.title > h2{
+    color: #333399;
+    font-family: 'kai';
+    margin-bottom: 10px;
+}
+.unit >div >img{
+    width: 100%;
+}
+.unit >div:nth-child(4) >span:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #333399;
+    border-radius: 50%;
+    float: left;
+    margin: 5px 10px;
+}
+div.more{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.more >button{
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    background:#fff;
+    border-radius: 6px;
+    border: 1px solid #46aef5;
+    float: left;
+    color: #46aef5;
+    outline: 0;
+    cursor: pointer;
+}
+.more >p{
+    text-align: center;
+    line-height: 50px;
+    color: #999;
+    float: left;
+    font-size: 14px;
+}
